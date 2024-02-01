@@ -1,4 +1,4 @@
-const { ipcRenderer } = window.require("electron");
+const { ipcRenderer } = require("electron");
 const codeContainer = document.getElementById("codeContainer");
 const codeElement = document.getElementById("code");
 const startButton = document.getElementById("start");
