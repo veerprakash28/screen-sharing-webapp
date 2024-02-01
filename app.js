@@ -3,8 +3,10 @@ const path = require("node:path");
 const { v4: uuidv4 } = require("uuid");
 const screenshot = require("screenshot-desktop");
 
-var socket = require("socket.io-client")("http://192.168.1.4:5001");
-var internal;
+var socket = require("socket.io-client")(
+  "https://screen-sharing-webapp-server.onrender.com/"
+);
+var interval;
 
 function createWindow() {
   const win = new BrowserWindow({
