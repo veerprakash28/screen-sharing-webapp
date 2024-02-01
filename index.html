@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>VP Screen Sharing App</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">VP Screen Sharing App</div>
+
+    <div class="container">
+      <div class="code-container" id="codeContainer">
+        <div class="roomLabel">Room ID:</div>
+        <div class="code" id="code"></div>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn" id="start" onclick="startShare()">
+          Start Share
+        </button>
+        <div class="copyButton btn" onclick="copyCode()">Copy</div>
+        <button class="btn" id="stop" onclick="stopShare()">Stop Share</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
